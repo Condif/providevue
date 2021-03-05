@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <Menu
-      v-bind:alfaSort="alfaSort"
-      v-bind:dateSort="dateSort"
-      v-bind:sortPostsByCategory="sortPostsByCategory"
-      v-bind:categories="categories"
+      :alfaSort="alfaSort"
+      :dateSort="dateSort"
+      :sortPostsByCategory="sortPostsByCategory"
+      :categories="categories"
     />
-    <Posts v-bind:posts="posts" v-bind:filteredPosts="filteredPosts" />
+    <Posts :posts="posts" :filteredPosts="filteredPosts" />
   </div>
 </template>
 

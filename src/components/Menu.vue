@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="ulCategories">
-      <ul v-for="category in categories" v-bind:key="category.id">
+      <ul v-for="category in categories" :key="category.id">
         <li>
           <button @click="sortPostsByCategory(category)">
             {{ category.name }}
@@ -70,8 +70,9 @@ button:hover {
   margin: 0 1rem 0 1rem;
   outline: none;
 }
-.sortButton:focus {
-        box-shadow: 0 0 3pt 2pt blue;
+button:focus {
+        box-shadow: 0 0 0 1pt rgb(1, 54, 75);
+        opacity: 100%;
     }
 
 .sortContainer {

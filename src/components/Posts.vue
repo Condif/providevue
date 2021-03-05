@@ -2,7 +2,7 @@
   <div class="container">
     <div class="content">
       <template v-if="filteredPosts.length === 0">
-        <div class="posts" v-for="(post, index) in posts" v-bind:key="index">
+        <div class="posts" v-for="(post, index) in posts" :key="index">
           <div class="date">
             <h5>{{(post.date.slice(0,10))}}</h5>
             <h5>{{(post.date.slice(11,21))}}</h5>
@@ -18,7 +18,7 @@
         <div
           class="posts"
           v-for="(post, index) in filteredPosts"
-          v-bind:key="index"
+          :key="index"
         >
            <div class="date">
             <h5>{{(post.date.slice(0,10))}}</h5>
