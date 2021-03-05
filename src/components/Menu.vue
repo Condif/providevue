@@ -51,6 +51,11 @@ button {
   border-radius: 1rem;
   border: none;
   opacity: 80%;
+  
+}
+
+li button {
+    outline: none;
 }
 
 button:hover {
@@ -63,7 +68,11 @@ button:hover {
   color: black;
   border: black solid 1px;
   margin: 0 1rem 0 1rem;
+  outline: none;
 }
+.sortButton:focus {
+        box-shadow: 0 0 3pt 2pt blue;
+    }
 
 .sortContainer {
     display: flex;
