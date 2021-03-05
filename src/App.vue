@@ -141,6 +141,7 @@ export default {
       )
       .then((res) => {
         this.posts = res.data;
+        console.log(res.data);
       })
       .catch((err) => console.log(err));
   },
